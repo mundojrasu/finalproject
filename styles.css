@@ -49,3 +49,20 @@ h2{
     font-size: 1.50em;
     display: inline;
 }
+
+/*Image Styling*/
+img{
+    display: block;
+    max-width: 100%;
+    margin: 0.5em 0;
+}
+
+/* ----- Skip Link Style ----- */
+#skip{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
