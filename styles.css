@@ -133,3 +133,11 @@ position: relative;
     color: var(--white);
     background-color: var(--dark-gray);
     }
+
+#categories {
+    padding-top: 50px;
+}
+
+#categories h2 {
+    font-weight: 700;
+}
