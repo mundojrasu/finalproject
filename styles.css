@@ -30,13 +30,35 @@ time, mark, audio, video {
     --yellow: #BF9004;
     --brown: #73532D;
     --red: #A64037;
+    --dark-gray: #2E2E2E;
+    --white: #ffffff
+}
+/*Global styling*/
+body {
+    min-height: 100vh;
+    min-width: 320px;    
+    margin: 0 auto;
+    
+
 }
 
 /*Font Styling*/
 h1, h2, h3, h4{
     font-family: var(--font);
     font-weight: 700;
+    color: var(--dark-gray)
 
+}
+
+p, li {
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--dark-gray)
+}
+
+
+li {
+    list-style-type: none;
 }
 
 h1{
@@ -66,3 +88,48 @@ img{
 	height: 1px;
 	overflow: hidden;
 }
+
+/*Header Styling*/
+header {
+    display: inline-flex;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    padding-top: .5em;
+    padding-left: .5em;
+}
+
+header svg {
+    padding-right: 3em;
+    padding-top: 1.5em;
+}
+
+/*Main Styling*/
+.hero-image {
+background-image: linear-gradient(rgba(238, 233, 233, 0.5), rgba(225, 214, 214, 0.5)), url("/images/hero.jpg");
+height: 20em;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.hero-text {
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-left: 1em;
+}
+.hero-text h2 {
+    font-size: 2rem;
+}
+
+.hero-text p {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.hero-text button {
+    color: var(--white);
+    background-color: var(--dark-gray);
+    }
