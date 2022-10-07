@@ -31,7 +31,8 @@ time, mark, audio, video {
     --brown: #73532D;
     --red: #A64037;
     --dark-gray: #2E2E2E;
-    --white: #ffffff
+    --white: #ffffff;
+    --offwhite: #d9dadb;
 }
 /*Global styling*/
 body {
@@ -105,6 +106,11 @@ header svg {
     padding-top: 1.5em;
 }
 
+header a {
+    text-decoration: none;
+    color: var(--dark-gray)
+}
+
 /*Main Styling*/
 .hero-image {
 background-image: linear-gradient(rgba(238, 233, 233, 0.5), rgba(225, 214, 214, 0.5)), url("/images/hero.jpg");
@@ -129,10 +135,25 @@ position: relative;
     padding-bottom: 2em;
 }
 
-.hero-text button {
-    color: var(--white);
+#viewWeekAdDiv {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#viewWeekAd {
+    display: inline-block;
     background-color: var(--dark-gray);
-    }
+    color: var(--white);
+    height: .2em;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 #categories {
     padding: 1em;
@@ -146,7 +167,7 @@ position: relative;
 
 }
 
-#categories-line li {
+#categories-line {
     columns: 2;
 }
 
@@ -190,4 +211,97 @@ position: relative;
     padding-top: 1em;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+form {
+    display: block;
+    width: 300px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+input, label {
+    display: block;
+    width: 95%;
+    font-family: var(--font);
+    padding: .5em;
+}
+
+input {
+    border: 2px solid;
+}
+
+input[type=submit]{
+	padding: 1em;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	color: var(--white);
+	background-color: var(--dark-gray);
+	border: none;
+	font-family: var(--font);
+}
+
+footer {
+    background-color: var(--offwhite);
+    display: block;
+    padding: 2em;
+}
+
+footer h3 {
+    font-size: 2rem
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+#social svg {
+    display: inline-block;
+    margin: auto;
+    width: 10%;
+}
+
+@media screen and (min-width: 550px) {
+    header li {
+        display: inline-block;
+        padding-top: 1em;
+    }
+
+    #categories-line {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #categories-line li {
+        columns: 3 / 1;
+    }
+
+    #coupongrid {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        border: 5px solid var(--red);
+        margin: 0 auto;
+    }
+
+    .couponClip {
+        width: 75%;
+    }
+
+    #coupons {
+        padding: 1em;
+        border: none;
+} 
+
+@media screen and (min-width: 1024px) {
+    header li {
+        display: inline-block;
+        padding-top: 1em;
+        padding-left: 50px;
+    }
+
+    header svg {
+        padding-left: 5%;
+    }
 }
