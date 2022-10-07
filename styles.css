@@ -113,7 +113,7 @@ header a {
 
 /*Main Styling*/
 .hero-image {
-background-image: linear-gradient(rgba(238, 233, 233, 0.5), rgba(225, 214, 214, 0.5)), url("/images/hero.jpg");
+background-image: linear-gradient(rgba(238, 233, 233, 0.5), rgba(225, 214, 214, 0.5)), url("images/hero.jpg");
 height: 20em;
 background-position: center;
 background-repeat: no-repeat;
